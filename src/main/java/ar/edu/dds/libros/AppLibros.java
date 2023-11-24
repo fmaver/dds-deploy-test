@@ -46,15 +46,9 @@ public class AppLibros {
 		Map<String, String> env = System.getenv();
 		Map<String, Object> configOverrides = new HashMap<String, Object>();
 
-		String[] keys = new String[] { 
-			"DATABASE_URL",
-			"javax__persistence__jdbc__driver",
-			"javax__persistence__jdbc__password",
-			"javax__persistence__jdbc__url",
-			"javax__persistence__jdbc__user",
-			"hibernate__hbm2ddl__auto",
-			"hibernate__connection__pool_size", 
-			"hibernate__show_sql" };
+		String[] keys = new String[] {"javax.persistence.jdbc.url", "javax.persistence.jdbc.user",
+				"javax.persistence.jdbc.password", "javax.persistence.jdbc.driver", "hibernate.hbm2ddl.auto",
+			"hibernate.connection.pool_size", "hibernate.show_sql"};
 
 		for (String key : keys) {
                
